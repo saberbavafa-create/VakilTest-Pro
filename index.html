@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -13,82 +12,124 @@
     box-sizing:border-box;
 }
 
-body{
+html,body{
+    width:100%;
+    height:100%;
     margin:0;
-    height:100vh;
-    font-family:Tahoma, Arial;
-    background:#eef1f8;
+    overflow:hidden;
+    font-family:Tahoma, Arial, sans-serif;
 }
 
-.container{
-    height:100vh;
+
+/* پس زمینه دو رنگ */
+body{
+
+    background:linear-gradient(
+        135deg,
+        #0f2027,
+        #2c5364
+    );
+
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-.card{
-    width:90%;
-    max-width:400px;
-    background:white;
-    border-radius:25px;
-    padding:25px 20px;
-    text-align:center;
-    box-shadow:0 8px 25px rgba(0,0,0,0.12);
-}
 
-.logo{
-    font-size:50px;
-}
+/* صفحه موبایل */
+.container{
 
-h1{
-    margin:5px;
-    color:#17227a;
-    font-size:28px;
-}
-
-.subtitle{
-    color:#555;
-    font-size:17px;
-    margin-bottom:20px;
-}
-
-
-.main-btn{
     width:100%;
-    padding:14px;
-    margin-bottom:15px;
-    border:none;
-    border-radius:15px;
-    background:#17227a;
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
     color:white;
-    font-size:19px;
 }
 
 
-.menu{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
+/* عنوان */
+.logo{
+
+    font-size:34px;
+    font-weight:bold;
+    margin-bottom:25px;
+
+    color:#d4af37;
 }
 
 
-.menu button{
-    padding:14px 5px;
+/* نمادها */
+.symbols{
+
+    font-size:55px;
+    margin-bottom:45px;
+
+    letter-spacing:10px;
+}
+
+
+/* دکمه ها */
+
+button{
+
+    width:75%;
+    max-width:320px;
+
+    height:55px;
+
+    margin:10px;
+
     border:none;
-    border-radius:14px;
-    background:#e8eaf6;
-    color:#17227a;
-    font-size:16px;
+    border-radius:30px;
+
+    font-size:20px;
+    font-weight:bold;
+
+    cursor:pointer;
+
 }
 
+
+/* ورود */
+
+.login{
+
+    background:#d4af37;
+    color:#111;
+
+}
+
+
+/* عضویت */
+
+.register{
+
+    background:rgba(255,255,255,0.15);
+
+    color:white;
+
+    border:1px solid white;
+
+}
+
+
+/* پایین صفحه */
 
 .footer{
-    margin-top:20px;
-    font-size:13px;
-    color:#777;
-}
 
+    position:absolute;
+
+    bottom:20px;
+
+    font-size:13px;
+
+    color:#ddd;
+
+}
 
 </style>
 
@@ -97,53 +138,40 @@ h1{
 
 <body>
 
+
 <div class="container">
 
-<div class="card">
 
-<div class="logo">⚖️</div>
-
-<h1>دادآزمون</h1>
-
-<div class="subtitle">
-شبیه‌ساز آزمون وکالت
+<div class="logo">
+⚖️ دادآزمون
 </div>
 
 
-<button class="main-btn">
-شروع آزمون
-</button>
+<div class="symbols">
 
-
-<div class="menu">
-
-<button>
-آزمون‌های گذشته
-</button>
-
-<button>
-کارنامه من
-</button>
-
-<button>
-عضویت / ورود
-</button>
-
-<button>
-تنظیمات
-</button>
+📚 ⚖️ 🔨
 
 </div>
+
+
+<button class="login">
+ورود
+</button>
+
+
+<button class="register">
+عضویت
+</button>
+
 
 
 <div class="footer">
-نسخه اول شبیه‌ساز وکالت
+شبیه‌ساز آزمون‌های حقوقی
 </div>
 
 
 </div>
 
-</div>
 
 
 </body>
