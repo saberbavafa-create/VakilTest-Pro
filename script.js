@@ -20,3 +20,8 @@ window.addEventListener("load", function () {
     document.querySelector(".container").style.opacity = "1";
     document.querySelector(".container").style.transform = "translateY(0)";
 });
+.container{
+    opacity:0;
+    transform:translateY(30px);
+    transition:all .8s ease;
+}
