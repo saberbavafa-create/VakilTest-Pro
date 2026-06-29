@@ -113,3 +113,104 @@ body{
     text-align:center;
 
 }
+/* تصویر */
+
+.image-box{
+
+    width:240px;
+
+    height:240px;
+
+    margin-bottom:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.image-box img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    filter:drop-shadow(0 0 25px rgba(255,215,0,.35));
+
+}
+
+/* دکمه‌ها */
+
+.buttons{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.buttons button{
+
+    width:100%;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:18px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+/* دکمه ورود */
+
+#loginBtn{
+
+    background:linear-gradient(90deg,#FFD700,#F4B400);
+
+    color:#08213d;
+
+    box-shadow:0 8px 20px rgba(255,215,0,.35);
+
+}
+
+/* دکمه عضویت */
+
+#registerBtn{
+
+    background:transparent;
+
+    color:#FFD700;
+
+    border:2px solid #FFD700;
+
+}
+
+/* افکت لمس */
+
+.buttons button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.buttons button:active{
+
+    transform:scale(.97);
+
+}
