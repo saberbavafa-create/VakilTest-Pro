@@ -1,178 +1,64 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>دادآزمون</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-*{
-    box-sizing:border-box;
-}
-
-html,body{
-    width:100%;
-    height:100%;
-    margin:0;
-    overflow:hidden;
-    font-family:Tahoma, Arial, sans-serif;
-}
-
-
-/* پس زمینه دو رنگ */
-body{
-
-    background:linear-gradient(
-        135deg,
-        #0f2027,
-        #2c5364
-    );
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-
-/* صفحه موبایل */
-.container{
-
-    width:100%;
-    height:100vh;
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-
-    color:white;
-}
-
-
-/* عنوان */
-.logo{
-
-    font-size:34px;
-    font-weight:bold;
-    margin-bottom:25px;
-
-    color:#d4af37;
-}
-
-
-/* نمادها */
-.symbols{
-
-    font-size:55px;
-    margin-bottom:45px;
-
-    letter-spacing:10px;
-}
-
-
-/* دکمه ها */
-
-button{
-
-    width:75%;
-    max-width:320px;
-
-    height:55px;
-
-    margin:10px;
-
-    border:none;
-    border-radius:30px;
-
-    font-size:20px;
-    font-weight:bold;
-
-    cursor:pointer;
-
-}
-
-
-/* ورود */
-
-.login{
-
-    background:#d4af37;
-    color:#111;
-
-}
-
-
-/* عضویت */
-
-.register{
-
-    background:rgba(255,255,255,0.15);
-
-    color:white;
-
-    border:1px solid white;
-
-}
-
-
-/* پایین صفحه */
-
-.footer{
-
-    position:absolute;
-
-    bottom:20px;
-
-    font-size:13px;
-
-    color:#ddd;
-
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
-
 <body>
 
+<div class="background"></div>
+
+<div class="overlay"></div>
 
 <div class="container">
 
+    <!-- عنوان -->
 
-<div class="logo">
-⚖️ دادآزمون
+    <h1 class="title">
+        دادآزمون
+    </h1>
+
+    <p class="subtitle">
+        شبیه‌ساز هوشمند آزمون وکالت
+    </p>
+
+    <!-- تصویر -->
+
+    <div class="image-box">
+
+        <img src="images/law.png" alt="Law">
+
+    </div>
+
+    <!-- دکمه‌ها -->
+
+    <div class="buttons">
+
+        <button id="loginBtn">
+            ورود
+        </button>
+
+        <button id="registerBtn">
+            عضویت
+        </button>
+
+    </div>
+
 </div>
 
-
-<div class="symbols">
-
-📚 ⚖️ 🔨
-
-</div>
-
-
-<button class="login">
-ورود
-</button>
-
-
-<button class="register">
-عضویت
-</button>
-
-
-
-<div class="footer">
-شبیه‌ساز آزمون‌های حقوقی
-</div>
-
-
-</div>
-
-
+<script src="script.js"></script>
 
 </body>
+
 </html>
