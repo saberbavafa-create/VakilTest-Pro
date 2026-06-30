@@ -2,63 +2,68 @@
 <html lang="fa" dir="rtl">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-<meta charset="UTF-8">
+    <title>دادآزمون</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b2148">
+    <meta name="description" content="سامانه هوشمند آمادگی آزمون وکالت">
 
-<title>دادآزمون</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="background"></div>
+<div class="app">
 
-<div class="overlay"></div>
+    <!-- نور پس زمینه -->
+    <div class="bg-light"></div>
 
-<div class="container">
+    <!-- محتوای صفحه -->
+    <main class="home">
 
-    <!-- عنوان -->
+        <!-- لوگو -->
+        <div class="logo-box">
 
-    <h1 class="title">
-        دادآزمون
-    </h1>
+            <img
+                src="image/Logo.png"
+                alt="دادآزمون"
+                class="logo">
 
-    <p class="subtitle">
-        شبیه‌ساز هوشمند آزمون وکالت
-    </p>
+        </div>
 
-    <!-- تصویر -->
+        <!-- عنوان -->
+        <h1 class="title">
+            دادآزمون
+        </h1>
 
-    <div class="image-box">
+        <!-- دکمه ورود -->
+        <div class="button-area">
 
-        <img src="images/law.png" alt="Law">
+            <button
+                id="loginBtn"
+                class="login-btn">
 
-    </div>
+                ورود / عضویت
 
-    <!-- دکمه‌ها -->
+            </button>
 
-    <div class="buttons">
+        </div>
 
-        <button id="loginBtn">
-            ورود
-        </button>
+        <!-- نسخه -->
+        <footer class="version">
 
-        <button id="registerBtn">
-            عضویت
-        </button>
+            نسخه 1.0
 
-    </div>
+        </footer>
+
+    </main>
 
 </div>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
