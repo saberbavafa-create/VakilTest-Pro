@@ -154,19 +154,12 @@ body{
 
 /*========================*/
 
+   
 .title{
-
-    color:#FFD34D;
-
-       font-size:
-clamp(48px,9vw,68px);
-
-    font-weight:800;
-
-    text-align:center;
-
-    letter-spacing:.5px;
-
+    color:red !important;
+    font-size:80px !important;
+    font-weight:900;
+}
 text-shadow:
 0 4px 8px rgba(0,0,0,.45),
 0 0 18px rgba(255,211,77,.45);
