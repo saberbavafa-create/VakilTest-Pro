@@ -1,16 +1,16 @@
-
-/* ===========================
-   DadAzmoon - Style.css
-=========================== */
+/* ==========================================================
+   DAD AZMOON
+   Version : 1.0
+   Author  : ChatGPT
+========================================================== */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Vazirmatn',sans-serif;
 }
 
-html,body{
+html{
     width:100%;
     height:100%;
     overflow:hidden;
@@ -18,110 +18,111 @@ html,body{
 
 body{
 
-    background:linear-gradient(180deg,#08162c,#10294f,#08162c);
+    width:100%;
+    height:100dvh;
+
+    overflow:hidden;
+
+    direction:rtl;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
-    color:white;
-
-}
-
-/* لایه پس‌زمینه */
-
-.background{
-
-    position:fixed;
-
-    inset:0;
+    font-family:
+    Tahoma,
+    sans-serif;
 
     background:
-    radial-gradient(circle at top,#d4af3720,transparent 45%),
-    radial-gradient(circle at bottom,#ffffff08,transparent 55%);
+    linear-gradient(
+    180deg,
+    #173D73 0%,
+    #245D9C 45%,
+    #5B9DE2 100%);
 
 }
 
-/* لایه تیره */
 
-.overlay{
+/*========================*/
 
-    position:fixed;
-
-    inset:0;
-
-    background:rgba(0,0,0,.18);
-
-}
-
-/* کادر اصلی */
-
-.container{
+.app{
 
     position:relative;
 
-    z-index:10;
+    width:100%;
+    height:100dvh;
+
+    overflow:hidden;
+
+}
+
+
+/*========================*/
+
+.bg-light{
+
+    position:absolute;
+
+    width:70vw;
+    height:70vw;
+
+    max-width:420px;
+    max-height:420px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+
+    rgba(255,255,255,.30),
+
+    rgba(255,255,255,0)
+
+    );
+
+    top:10%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    filter:blur(30px);
+
+}
+
+
+/*========================*/
+
+.home{
+
+    position:relative;
 
     width:100%;
-
-    max-width:430px;
-
     height:100%;
 
     display:flex;
 
     flex-direction:column;
 
-    justify-content:center;
+    justify-content:space-between;
 
     align-items:center;
 
-    padding:30px;
+    padding:
+
+    clamp(40px,6vh,70px)
+
+    clamp(22px,5vw,36px);
 
 }
 
-/* عنوان */
 
-.title{
+/*========================*/
 
-    font-size:58px;
+.logo-box{
 
-    font-weight:800;
-
-    color:#FFD700;
-
-    text-shadow:
-    0 0 8px rgba(255,215,0,.6),
-    0 0 20px rgba(255,215,0,.3);
-
-}
-
-/* زیرعنوان */
-
-.subtitle{
-
-    margin-top:10px;
-
-    color:#eeeeee;
-
-    font-size:19px;
-
-    margin-bottom:40px;
-
-    text-align:center;
-
-}
-/* تصویر */
-
-.image-box{
-
-    width:240px;
-
-    height:240px;
-
-    margin-bottom:45px;
+    flex:1;
 
     display:flex;
 
@@ -129,37 +130,76 @@ body{
 
     align-items:center;
 
-}
-
-.image-box img{
-
     width:100%;
 
-    height:100%;
+}
+
+
+/*========================*/
+
+.logo{
+
+    width:min(62vw,300px);
+
+    height:auto;
 
     object-fit:contain;
 
-    filter:drop-shadow(0 0 25px rgba(255,215,0,.35));
+    user-select:none;
+
+    pointer-events:none;
+
+    filter:
+
+    drop-shadow(0 14px 30px rgba(0,0,0,.35));
 
 }
 
-/* دکمه‌ها */
 
-.buttons{
+/*========================*/
+
+.title{
+
+    color:#FFD34D;
+
+    font-size:
+
+    clamp(36px,7vw,52px);
+
+    font-weight:800;
+
+    text-align:center;
+
+    letter-spacing:.5px;
+
+    text-shadow:
+
+    0 3px 12px rgba(0,0,0,.35);
+
+    margin-top:8px;
+
+   
+}/*========================*/
+/* دکمه ورود / عضویت */
+/*========================*/
+
+.button-area{
 
     width:100%;
 
     display:flex;
 
-    flex-direction:column;
+    justify-content:center;
 
-    gap:18px;
+    align-items:center;
+
+    margin-top:18px;
 
 }
 
-.buttons button{
+.login-btn{
 
-    width:100%;
+    width:min(88%,420px);
 
     height:58px;
 
@@ -167,50 +207,109 @@ body{
 
     border-radius:18px;
 
-    font-size:22px;
+    background:#FFD34D;
+
+    color:#173D73;
+
+    font-size:20px;
 
     font-weight:700;
 
     cursor:pointer;
 
-    transition:.3s;
+    transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    background .25s ease;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.28);
 
 }
 
-/* دکمه ورود */
+.login-btn:hover{
 
-#loginBtn{
+    transform:translateY(-2px);
 
-    background:linear-gradient(90deg,#FFD700,#F4B400);
-
-    color:#08213d;
-
-    box-shadow:0 8px 20px rgba(255,215,0,.35);
+    box-shadow:
+    0 16px 30px rgba(0,0,0,.35);
 
 }
 
-/* دکمه عضویت */
+.login-btn:active{
 
-#registerBtn{
-
-    background:transparent;
-
-    color:#FFD700;
-
-    border:2px solid #FFD700;
+    transform:scale(.98);
 
 }
 
-/* افکت لمس */
+/*========================*/
+/* نسخه برنامه */
+/*========================*/
 
-.buttons button:hover{
+.version{
 
-    transform:translateY(-3px);
+    color:rgba(255,255,255,.75);
+
+    font-size:14px;
+
+    margin-top:22px;
+
+    margin-bottom:max(10px, env(safe-area-inset-bottom));
 
 }
 
-.buttons button:active{
+/*========================*/
+/* گوشی‌های کوچک */
+/*========================*/
 
-    transform:scale(.97);
+@media (max-height:700px){
+
+    .home{
+
+        padding:
+        28px
+        20px;
+
+    }
+
+    .logo{
+
+        width:min(52vw,220px);
+
+    }
+
+    .title{
+
+        font-size:34px;
+
+    }
+
+    .login-btn{
+
+        height:54px;
+
+        font-size:18px;
+
+    }
+
+}
+
+/*========================*/
+/* گوشی‌های بزرگ */
+/*========================*/
+
+@media (min-width:768px){
+
+    .logo{
+
+        width:280px;
+
+    }
+
+    .login-btn{
+
+        width:380px;
+
+    }
 
 }
